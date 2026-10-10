@@ -1,0 +1,1 @@
+{"result":{"content":[{"type":"text","text":"{\n  \"ok\": true,\n  \"mission\": {\n    \"mission_id\": \"M1\",\n    \"title\": \"Inventaire\",\n    \"brief\": \"Le conseil municipal demande le nombre exact d'ouvrages détenus par la bibliothèque, et la répartition par genre. Donne les chiffres et explique comment tu les as obtenus.\"\n  }\n}"}]},"jsonrpc":"2.0","id":1}

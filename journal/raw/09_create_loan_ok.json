@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "loan": {
+    "loan_id": "LN-5144",
+    "book_id": "BK-1042",
+    "member_id": "MB-214",
+    "started_at": 1791277200,
+    "due_at": 1793091600,
+    "returned_at": null,
+    "status": "open",
+    "archived": false,
+    "desk_code": "Z9"
+  }
+}

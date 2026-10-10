@@ -1,0 +1,168 @@
+{
+  "genere_le": "2026-10-10",
+  "horloge_serveur": "2026-10-06T09:00:00Z",
+  "M1": {
+    "count_books": 184,
+    "list_books_defaut": 158,
+    "archived": 26,
+    "genres_en_circulation": {
+      "poésie": 29,
+      "policier": 27,
+      "bd": 19,
+      "roman": 30,
+      "jeunesse": 30,
+      "essai": 23
+    },
+    "exemplaires_en_circulation": 415
+  },
+  "M2": {
+    "loan_id": "LN-5106",
+    "member_id": "MB-225",
+    "book_id": "BK-1075",
+    "due_at": "2026-04-10T09:00:00Z",
+    "jours_de_retard": 179,
+    "montant_du": 26.85,
+    "nb_pret_ouverts_en_retard": 49
+  },
+  "M5": {
+    "membres_en_retard": 29,
+    "joignables": 21,
+    "sans_email": 8,
+    "sans_email_ids": [
+      "MB-203",
+      "MB-206",
+      "MB-212",
+      "MB-226",
+      "MB-232",
+      "MB-234",
+      "MB-235",
+      "MB-241"
+    ],
+    "inactifs_en_retard": [
+      "MB-219"
+    ],
+    "detail": {
+      "MB-200": {
+        "email": "yanis.robin@example.org",
+        "active": true
+      },
+      "MB-201": {
+        "email": "mehdi.moreau@example.org",
+        "active": true
+      },
+      "MB-202": {
+        "email": "nora.noel@example.org",
+        "active": true
+      },
+      "MB-203": {
+        "email": null,
+        "active": true
+      },
+      "MB-204": {
+        "email": "lea.guerin@example.org",
+        "active": true
+      },
+      "MB-206": {
+        "email": null,
+        "active": true
+      },
+      "MB-207": {
+        "email": "mehdi.blanc@example.org",
+        "active": true
+      },
+      "MB-208": {
+        "email": "paul.leroy@example.org",
+        "active": true
+      },
+      "MB-210": {
+        "email": "lucas.blanc@example.org",
+        "active": true
+      },
+      "MB-212": {
+        "email": null,
+        "active": true
+      },
+      "MB-214": {
+        "email": "chloe.roux@example.org",
+        "active": true
+      },
+      "MB-216": {
+        "email": "thomas.dumas@example.org",
+        "active": true
+      },
+      "MB-217": {
+        "email": "hugo.barbier@example.org",
+        "active": true
+      },
+      "MB-219": {
+        "email": "sarah.guerin@example.org",
+        "active": false
+      },
+      "MB-221": {
+        "email": "paul.dumas@example.org",
+        "active": true
+      },
+      "MB-225": {
+        "email": "paul.blanc@example.org",
+        "active": true
+      },
+      "MB-226": {
+        "email": null,
+        "active": true
+      },
+      "MB-227": {
+        "email": "hugo.perrin@example.org",
+        "active": true
+      },
+      "MB-228": {
+        "email": "lucas.fontaine@example.org",
+        "active": true
+      },
+      "MB-230": {
+        "email": "nora.roux@example.org",
+        "active": true
+      },
+      "MB-231": {
+        "email": "karim.guerin@example.org",
+        "active": true
+      },
+      "MB-232": {
+        "email": null,
+        "active": true
+      },
+      "MB-234": {
+        "email": null,
+        "active": true
+      },
+      "MB-235": {
+        "email": null,
+        "active": true
+      },
+      "MB-237": {
+        "email": "yanis.robin@example.org",
+        "active": true
+      },
+      "MB-239": {
+        "email": "sarah.perrin@example.org",
+        "active": true
+      },
+      "MB-240": {
+        "email": "lea.perrin@example.org",
+        "active": true
+      },
+      "MB-241": {
+        "email": null,
+        "active": true
+      },
+      "MB-242": {
+        "email": "paul.guerin@example.org",
+        "active": true
+      }
+    }
+  },
+  "totaux": {
+    "membres": 46,
+    "prets": 142,
+    "prets_archives": 7
+  }
+}

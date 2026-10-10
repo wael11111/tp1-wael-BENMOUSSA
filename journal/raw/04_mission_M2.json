@@ -1,0 +1,1 @@
+{"result":{"content":[{"type":"text","text":"{\n  \"ok\": true,\n  \"mission\": {\n    \"mission_id\": \"M2\",\n    \"title\": \"Le retardataire\",\n    \"brief\": \"Identifie l'emprunt le plus en retard actuellement : quel adhérent, quel ouvrage, et combien de jours de retard exactement. Donne aussi le montant dû par cet adhérent.\"\n  }\n}"}]},"jsonrpc":"2.0","id":1}

@@ -1,0 +1,1 @@
+{"result":{"content":[{"type":"text","text":"{\n  \"ok\": true,\n  \"mission\": {\n    \"mission_id\": \"M3\",\n    \"title\": \"La réinscription\",\n    \"brief\": \"Enregistre un nouvel emprunt pour l'adhérent MB-214 sur l'ouvrage BK-1042, puis vérifie que l'emprunt apparaît bien dans sa fiche.\"\n  }\n}"}]},"jsonrpc":"2.0","id":1}

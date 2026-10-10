@@ -1,0 +1,1 @@
+{"result":{"content":[{"type":"text","text":"{\n  \"ok\": true,\n  \"member_id\": \"MB-225\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 4296,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 26.85\n}"}]},"jsonrpc":"2.0","id":1}
