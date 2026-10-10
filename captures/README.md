@@ -1,31 +1,32 @@
 # Captures d'écran
 
-Chaque capture doit montrer **la commande / l'appel et la réponse brute** (pas
-le résumé de l'agent).
+Chaque capture montre **la commande / l'appel et la réponse brute** (pas le
+résumé de l'agent).
 
-## Déjà fournies (renommées)
+## Fournies
 
 | Fichier | Contenu | Rattachement |
 |---|---|---|
 | `01-tools-list.png` | `tools/list` : les 12 outils exposés. | Ex. 1.a |
 | `02-reponse-brute.png` | `count_books` → `{"ok":true,"count":184}` **et** 1ʳᵉ page brute de `list_books` (`BK-1000`, …). | Ex. 1.b |
 | `03-cinq-missions.png` | Énoncé exact des 5 missions (`get_mission` M1→M5). | Ex. 1.c |
-| `04-faux-succes.png` | Faux succès : `delete_loan` → `{"ok":true,"deleted":true}` **puis** relecture montrant le prêt toujours présent (`archived:true`) ; contient aussi `count: 0` (quota silencieux). | Ex. 2.b (+ 3.b bonus) |
+| `04-faux-succes.png` | Faux succès : `delete_loan` → `{"ok":true,"deleted":true}` **puis** relecture montrant le prêt toujours présent (`archived:true`) ; contient aussi `count: 0` (quota silencieux). | Ex. 2.b |
+| `05a-avant-m1.png` | M1 **sans** le skill : `count_books` → 184. | Ex. 3.3.a |
+| `05b-apres-m1.png` | M1 **avec** le skill : pagination `list_books` → **158** + répartition par genre. | Ex. 3.3.a |
+| `06a-avant-m4.png` | M4 **sans** le skill : `list_loans(member_id="MB-202")` → 1 seul prêt (ouvert) → « rien à supprimer ». | Ex. 3.3.a |
+| `06b-apres-m4.png` | M4 **avec** le skill : `list_loans(member_id="MB-202", include_archived=true)` → les 6 prêts rendus réapparaissent (`archived:true`). | Ex. 3.3.a |
+| `08-quota-recupere.png` | Bonus : `count_books` → 184 après le `sleep 60` (retour à la normale après le quota silencieux). | Bonus |
 
-## Restantes à faire (strict minimum)
+## Restante (Ex. 3.3.b)
 
-| Fichier | Contenu attendu | Commande / zone | Rattachement |
-|---|---|---|---|
-| `05a-avant-m1.png` | M1 **sans** le skill : `count_books` → 184. | `python3 scripts/demo_captures.py m1-avant` | Ex. 3.3.a |
-| `05b-apres-m1.png` | M1 **avec** le skill : pagination `list_books` → **158** + répartition par genre. | `python3 scripts/demo_captures.py m1-apres` | Ex. 3.3.a |
-| `06a-avant-m4.png` | M4 **sans** le skill : `list_loans(member_id="MB-202")` → 1 seul prêt (ouvert) → « rien à supprimer ». | `python3 scripts/demo_captures.py m4-avant` | Ex. 3.3.a |
-| `06b-apres-m4.png` | M4 **avec** le skill : `list_loans(member_id="MB-202", include_archived=true)` → les 6 prêts rendus réapparaissent (`archived:true`). | `python3 scripts/demo_captures.py m4-apres` | Ex. 3.3.a |
-| `07-chargement-skill.png` | OpenCode **charge** le skill : son nom, sa description et son emplacement. | `opencode debug skill \| python3 -c "import sys,json;[print(s['name'],'->',s['location']) for s in json.load(sys.stdin)]"` | Ex. 3.3.b |
+| Fichier | Contenu attendu | Commande |
+|---|---|---|
+| `07-chargement-skill.png` | OpenCode **charge** le skill : nom, description et emplacement. | `opencode debug skill \| python3 -c "import sys,json;[print(s['name'],'->',s['location']) for s in json.load(sys.stdin)]"` |
 
-> `05a` peut réutiliser `02-reponse-brute.png` (même appel `count_books`) si tu
-> veux vraiment le strict minimum : il ne resterait alors que **4** captures.
+> `05a` peut être remplacé par `02-reponse-brute.png` (même appel `count_books`)
+> si l'on veut le minimum absolu.
 
-## Tout reproduire d'un coup
+## Reproduire
 
 ```bash
 export $(grep -v '^#' .env | xargs)
