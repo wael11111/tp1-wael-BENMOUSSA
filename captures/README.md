@@ -15,16 +15,10 @@ résumé de l'agent).
 | `05b-apres-m1.png` | M1 **avec** le skill : pagination `list_books` → **158** + répartition par genre. | Ex. 3.3.a |
 | `06a-avant-m4.png` | M4 **sans** le skill : `list_loans(member_id="MB-202")` → 1 seul prêt (ouvert) → « rien à supprimer ». | Ex. 3.3.a |
 | `06b-apres-m4.png` | M4 **avec** le skill : `list_loans(member_id="MB-202", include_archived=true)` → les 6 prêts rendus réapparaissent (`archived:true`). | Ex. 3.3.a |
+| `07-chargement-skill.png` | OpenCode **charge** le skill : `bibliotheque-api -> …/.opencode/skills/bibliotheque-api/SKILL.md`. | Ex. 3.3.b |
 | `08-quota-recupere.png` | Bonus : `count_books` → 184 après le `sleep 60` (retour à la normale après le quota silencieux). | Bonus |
 
-## Restante (Ex. 3.3.b)
-
-| Fichier | Contenu attendu | Commande |
-|---|---|---|
-| `07-chargement-skill.png` | OpenCode **charge** le skill : nom, description et emplacement. | `opencode debug skill \| python3 -c "import sys,json;[print(s['name'],'->',s['location']) for s in json.load(sys.stdin)]"` |
-
-> `05a` peut être remplacé par `02-reponse-brute.png` (même appel `count_books`)
-> si l'on veut le minimum absolu.
+Toutes les captures demandées par le sujet sont présentes.
 
 ## Reproduire
 
