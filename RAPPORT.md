@@ -250,10 +250,11 @@ automatiquement. Captures avant/après sur **M1** et **M4** :
   identifié.
 
 **b. Le skill a-t-il été lu ?**
-Oui : l'agent appelle l'outil `skill({ name: "bibliotheque-api" })`, ce qui
-injecte le contenu du `SKILL.md`. Preuve : la liste des skills disponibles dans
-la description de l'outil `skill` (nom + description), puis l'appel de
-chargement.
+Oui. Preuve la plus directe : `opencode debug skill` liste le skill avec son
+nom, sa description et son **emplacement**
+(`.opencode/skills/bibliotheque-api/SKILL.md`) — OpenCode l'a donc bien
+découvert et chargé. Côté agent, le contenu est injecté via
+`skill({ name: "bibliotheque-api" })`.
 
 **c. Pourquoi un skill et pas une command ? (3 lignes)**
 Une command est un raccourci que **l'utilisateur** déclenche explicitement ;
@@ -271,3 +272,4 @@ fournit à l'agent une connaissance durable du serveur.
 - Analyse chiffrée reproductible : `journal/analyse.json`
 - Journal détaillé : `JOURNAL.md`
 - Zones à capturer : `captures/README.md`
+- Script de reproduction des captures : `scripts/demo_captures.py`

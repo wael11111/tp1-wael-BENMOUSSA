@@ -17,6 +17,7 @@ sur une API non documentée, puis capitalisation dans un **skill OpenCode**.
 | `JOURNAL.md` | Journal de bord détaillé des cinq missions. |
 | `journal/raw/` | Preuves brutes JSON (appels et réponses). |
 | `journal/analyse.json` | Analyse chiffrée reproductible. |
+| `scripts/demo_captures.py` | Reproduit les sorties des zones à capturer. |
 | `captures/` | Captures d'écran (voir `captures/README.md`). |
 
 ## Mise en route
